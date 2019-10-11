@@ -1,0 +1,18 @@
+{
+	"description": "Add the ability to switch between windows and applications using vim-like keypresses (h, j, k, l)", 
+	"extension-id": "vim-alttab", 
+	"gettext-domain": "gnome-shell-extensions", 
+	"name": "VIM Alt-Tab", 
+	"original-authors": [
+		"jw@bargsten.org", 
+		"thomas.bouffon@gmail.com", 
+		"koko@kokong.info"
+	], 
+	"settings-schema": "org.gnome.shell.extensions.vim-alttab", 
+	"shell-version": [
+		"3.28"
+	], 
+	"url": "https://gitlab.gnome.org/GNOME/gnome-shell-extensions", 
+	"uuid": "vim-altTab@kokong.info", 
+	"version": 1
+}
