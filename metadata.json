@@ -12,7 +12,7 @@
 	"shell-version": [
 		"3.28"
 	], 
-	"url": "https://gitlab.gnome.org/GNOME/gnome-shell-extensions", 
+	"url": "https://github.com/koko-ng/vim-altTab", 
 	"uuid": "vim-altTab@kokong.info", 
 	"version": 1
 }
