@@ -20,16 +20,16 @@ function mapVimKeys(cb) {
 	return function(keysym, action) {
 		switch(keysym) {
 			case Clutter.KEY_h:
-				keysym = Clutter.Left;
+				keysym = Clutter.KEY_Left;
 				break;
 			case Clutter.KEY_l:
-				keysym = Clutter.Right;
+				keysym = Clutter.KEY_Right;
 				break;
 			case Clutter.KEY_k:
-				keysym = Clutter.Up;
+				keysym = Clutter.KEY_Up;
 				break;
 			case Clutter.KEY_j:
-				keysym = Clutter.Down;
+				keysym = Clutter.KEY_Down;
 				break;
 		}
 		cb.call(this, keysym, action);
@@ -38,10 +38,6 @@ function mapVimKeys(cb) {
 
 function enable() {
 	for (let switcherPopup in injections) {
-		global.log(AltTab);
-		global.log(switcherPopup);
-		global.log(AltTab['WindowSwitcherPopup']);
-		global.log(AltTab.WindowSwitcherPopup);
 		injections[switcherPopup]['_keyPressHandler'] = AltTab[switcherPopup].prototype._keyPressHandler;
 		AltTab[switcherPopup].prototype._keyPressHandler = mapVimKeys(injections[switcherPopup]['_keyPressHandler']);
 	}
