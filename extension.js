@@ -20,16 +20,16 @@ function mapVimKeys(cb) {
 	return function(keysym, action) {
 		switch(keysym) {
 			case Clutter.KEY_h:
-				keysym = Clutter.KEY_Left;
+				keysym = Clutter.Left || Clutter.KEY_Left;
 				break;
 			case Clutter.KEY_l:
-				keysym = Clutter.KEY_Right;
+				keysym = Clutter.Right || Clutter.KEY_Right;
 				break;
 			case Clutter.KEY_k:
-				keysym = Clutter.KEY_Up;
+				keysym = Clutter.Up || Clutter.KEY_Up;
 				break;
 			case Clutter.KEY_j:
-				keysym = Clutter.KEY_Down;
+				keysym = Clutter.Down || Clutter.KEY_Down;
 				break;
 		}
 		cb.call(this, keysym, action);
