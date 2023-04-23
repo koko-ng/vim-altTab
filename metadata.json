@@ -16,9 +16,10 @@
 		"40",
 		"41",
         "42",
-        "43"
+        "43",
+        "44"
 	],
 	"url": "https://github.com/koko-ng/vim-altTab",
 	"uuid": "vim-altTab@kokong.info",
-	"version": 7
+	"version": 8
 }
