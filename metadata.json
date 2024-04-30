@@ -5,7 +5,7 @@
   "name": "VIM Alt-Tab",
   "original-authors": ["koko@kokong.info"],
   "settings-schema": "org.gnome.shell.extensions.vim-alttab",
-  "shell-version": ["45"],
+  "shell-version": ["46"],
   "url": "https://github.com/koko-ng/vim-altTab",
   "uuid": "vim-altTab@kokong.info",
   "version": 8
